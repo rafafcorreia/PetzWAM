@@ -1,0 +1,8 @@
+Feature: Search a Product
+  Scenario: Search a Product Successfully
+    Given I access Petz Homepage
+    When I search "Aquário Boyu Curvo 100 187 Litros Preto Champagne" with Magnifier Button
+    Then I see the tab title "Aquário Boyu Curvo 100 187 Litros Preto Champagne"
+    And I see a list with product "Aquário Boyu Curvo 100 187 Litros Preto Champagne"
+    And I click at product "Aquário Boyu Curvo 100 187 Litros Preto Champagne"
+    Then show the product name "Aquário Boyu Curvo 100 187 Litros Preto Champagne" and price "R$ 3.199,99"
